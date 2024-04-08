@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class ArithmeticsInputOutput {
-    public HashMap<String, Integer> arithmeticsInput() {
-        HashMap<String, Integer> inputValues = new HashMap<>();
+    public HashMap<String, Integer> arithmeticsInput() { // 출력 메소드
+        HashMap<String, Integer> inputValues = new HashMap<>(); // 입력된 값을 HaspMap으로 담음
 
         Scanner scanner = new Scanner(System.in);
         try {
