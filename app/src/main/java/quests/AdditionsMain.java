@@ -1,9 +1,9 @@
 package quests;
 import java.util.Scanner;
 
-public class AddtionsMain {
+public class AdditionsMain {
     public static void main(String[] args) {
-        AddtionsSub subs = new AddtionsSub() ;
+        AdditionsSub subs = new AdditionsSub() ;
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("firstNumber : ");
