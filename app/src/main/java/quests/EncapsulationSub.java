@@ -1,7 +1,7 @@
 package quests;
 
 import java.util.HashMap;
-import java.util.InputMismatchException;
+
 
 public class EncapsulationSub {
     public int firstNum ;
