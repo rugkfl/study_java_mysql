@@ -1,15 +1,25 @@
 package co_templates;
 
-public class ConstructorAnimal {
-    public int firstNum ; //(public)이 생략 되어있는 것
+public class ConstructorAnimal { //Constructors는 return 값이 없음 
+    public int firstNum ; 
     public int secondNum ;
-    private int result ; // 아래의 변수와 다름 
+    private int result ;
 
-    public void setResult(int number) { //result의 값을 바꿔 줄 수 있는 method
+    public ConstructorAnimal() {
+        System.out.println("ConstructorAnimal()");
+    }
+
+    public ConstructorAnimal(int firstNumber, int secondNumber) {
+        System.out.println("ConstructorAnimal(int firstNumber, int secondNumber)");
+        this.firstNum = firstNumber; // 생성자로 초기화 시키는 방법
+        this.secondNum = secondNumber;
+    }
+
+    public void setResult(int number) { 
         this.result = number; 
     }
 
-    public int getResult() { // 값을 가져오는 method이므로 param필요 x / 펑션 이름에는 해당 값의 변수와 동일하게 넣음
+    public int getResult() {
         return this.result;
     }
 
@@ -18,10 +28,10 @@ public class ConstructorAnimal {
     }
 
     public void byPass(int firstNumber, int secondNumber) {
-        this.firstNum = firstNumber; // this는 이 class를 가르키는 말
+        this.firstNum = firstNumber; 
         this.secondNum = secondNumber; 
         this.result = firstNumber + secondNumber ;
-        // this.result = result ; (이 방법은 쓰지 x)
+       
         return;
     }
 }
