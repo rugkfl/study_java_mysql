@@ -1,4 +1,4 @@
-package codingtest.baekjoon;
+package codingtest.baekjoon.Level_01;
 import java.util.Scanner;
 
 public class AdivideB {

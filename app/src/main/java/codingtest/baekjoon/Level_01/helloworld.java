@@ -1,4 +1,4 @@
-package codingtest.baekjoon;
+package codingtest.baekjoon.Level_01;
 
 public class helloworld {
     public static void main(String[] args) {
